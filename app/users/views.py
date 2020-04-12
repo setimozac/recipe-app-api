@@ -12,7 +12,8 @@ class CreateUsersView(generics.CreateAPIView):
 class AuthTokenView(ObtainAuthToken):
 
     serializer_class = AuthTokenSerializer
-    renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES  # to see in the browser
+    renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
+    # to see the content in the browser
 
 
 class ManageUserView(generics.RetrieveUpdateAPIView):
