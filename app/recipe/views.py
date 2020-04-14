@@ -1,4 +1,4 @@
-from django.shortcuts import render
+
 from .serializers import TagSerializer
 from core.models import Tag
 from rest_framework import viewsets, mixins
